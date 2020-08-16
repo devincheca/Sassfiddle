@@ -1,0 +1,87 @@
+$font-stack: Impact, sans-serif;
+$alt-font: Arial, sans-serif;
+$full-background-color: #664E4C;
+$primary-color: #664E4C;
+$secondary-color: #C1D37F;
+$dark-accent: #E2D58B;
+$light-accent: #F0E2A3;
+$full-accent: #F9D4BB;
+$primary-text-color: #000000;
+$secondary-text-color: #ffffff;
+$row-padding: .75em 0 .75em 0;
+$side-padding: 0 .75em 0 .75em;
+body {
+  font: 100% $font-stack;
+  background-color: $full-background-color;
+}
+topbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: $dark-accent;
+  padding: .25em 0 .25em 0;
+  span {
+    color: $primary-text-color;
+  }
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: $light-accent;
+  padding: $row-padding;
+  span {
+    color: $primary-text-color;
+  }
+  submenu {
+    display: none;
+  }
+  submenu:hover {
+    display: block;
+  }
+}
+contact {
+  font: $alt-font;
+  font-weight: bold;
+  p::before {
+    content: "Contact \a";
+    white-space: pre;
+  }
+  p {
+    background-color: $full-accent;
+    padding: $row-padding;
+    font: 100% $font-stack;
+  }
+}
+.contactReach {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: $full-accent;
+  padding: $row-padding;
+  contactus {
+    padding: $side-padding;
+    input {
+      display: block;
+    }
+    button {
+      background-color: $full-background-color;
+      color: $secondary-text-color;
+      text-transform: capitalize;
+      padding: .25em .5em .25em .5em;
+    }
+  }
+  contactus::before {
+    content: "contact us";
+    white-space: pre;
+    text-transform: uppercase;
+  }
+  reachus {
+    padding: $side-padding;
+  }
+  reachus::before {
+    content: "reach us";
+    white-space: pre;
+    text-transform: uppercase;
+  }
+}

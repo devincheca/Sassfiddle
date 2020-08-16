@@ -1,0 +1,81 @@
+body {
+  font: 100% Impact, sans-serif;
+  background-color: #664E4C;
+}
+
+topbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #E2D58B;
+  padding: 0.25em 0 0.25em 0;
+}
+topbar span {
+  color: #000000;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #F0E2A3;
+  padding: 0.75em 0 0.75em 0;
+}
+nav span {
+  color: #000000;
+}
+nav submenu {
+  display: none;
+}
+nav submenu:hover {
+  display: block;
+}
+
+contact {
+  font: Arial, sans-serif;
+  font-weight: bold;
+}
+contact p::before {
+  content: "Contact \a";
+  white-space: pre;
+}
+contact p {
+  background-color: #F9D4BB;
+  padding: 0.75em 0 0.75em 0;
+  font: 100% Impact, sans-serif;
+}
+
+.contactReach {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #F9D4BB;
+  padding: 0.75em 0 0.75em 0;
+}
+.contactReach contactus {
+  padding: 0 0.75em 0 0.75em;
+}
+.contactReach contactus input {
+  display: block;
+}
+.contactReach contactus button {
+  background-color: #664E4C;
+  color: #ffffff;
+  text-transform: capitalize;
+  padding: 0.25em 0.5em 0.25em 0.5em;
+}
+.contactReach contactus::before {
+  content: "contact us";
+  white-space: pre;
+  text-transform: uppercase;
+}
+.contactReach reachus {
+  padding: 0 0.75em 0 0.75em;
+}
+.contactReach reachus::before {
+  content: "reach us";
+  white-space: pre;
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=index.css.map */
